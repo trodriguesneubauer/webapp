@@ -1,6 +1,6 @@
-# Etapa 4 - Introdução a JQuery
+# Etapa 5 - Introdução a conceitos de banco de dados e backend
 
-Essa etapa tem por objetivo mostrar como aplicar JQuery pode ser aplicado para facilitar a construção dos scripts JS da aplicação web.
+Essa etapa tem por objetivo introduzir conceitos de banco de dados e backend
 
 ## Instruções
 
