@@ -5,7 +5,7 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false })
 const hostname = '127.0.0.1';
 
 /* Servidor do Banco de Dados */
-const portback = 3061;
+const portback = 3071;
 const sqlite3 = require('sqlite3').verbose();
 const server = express();
 const DBPATH = 'src/dbUser.db';
@@ -15,7 +15,7 @@ server.use(express.json());
 
 /* Definição dos endpoints */
 
-/****** CRUD ******************************************************************/
+/******** CRUD ************/
 
 // Retorna todos registros (é o R do CRUD - Read)
 server.get('/users', (req, res) => {
@@ -52,7 +52,7 @@ server.post('/userinsert', urlencodedParser, (req, res) => {
 // Atualiza um registro (é o U do CRUD - Update)
 server.post('/userupdate', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
-	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
+	//res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
 
 	sql = "UPDATE tbUser SET title = '" + req.body.title + "' WHERE userId = " + req.body.userId;
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
