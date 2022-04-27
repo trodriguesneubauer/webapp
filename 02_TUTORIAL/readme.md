@@ -1,6 +1,6 @@
-# Etapa 3 - Introdução a Javascript
+# Etapa 4 - Introdução a JQuery
 
-Essa etapa tem por objetivo mostrar como aplicar Javascript para incluir scripts com lógica algorítmica na sua aplicação web.
+Essa etapa tem por objetivo mostrar como aplicar JQuery pode ser aplicado para facilitar a construção dos scripts JS da aplicação web.
 
 ## Instruções
 
